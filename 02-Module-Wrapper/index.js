@@ -1,0 +1,11 @@
+// Module Wrapper
+// * Before a module's code is executed, Node.js will wrap it with a function wrapper that looks like the following:
+
+(function (exports, require, module, __filename, __dirname) {
+  // module code actually lives in here
+  // console.log(__filename);
+});
+
+// contoh:
+console.log(__dirname);
+console.log(__filename);

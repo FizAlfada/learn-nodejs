@@ -23,20 +23,20 @@ Contoh beberapa paket populer dalam ekosistem Node.js adalah:
 **Mongoose:** ORM (Object-Relational Mapping) untuk MongoDB
 Node.js telah menjadi sangat populer dalam pengembangan aplikasi modern karena fleksibilitas dan kinerjanya yang tinggi, serta komunitas besar yang terus berkontribusi pada pengembangannya.
 
-```bash
+```js
 // Memuat modul http bawaan Node.js
-const http = require('http');
+const http = require("http");
 
 // Membuat server HTTP
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello, World!\n');
+  res.setHeader("Content-Type", "text/plain");
+  res.end("Hello, World!\n");
 });
 
 // Menentukan port dan alamat IP tempat server akan berjalan
 const port = 3000;
-const hostname = '127.0.0.1';
+const hostname = "127.0.0.1";
 
 // Menjalankan server
 server.listen(port, hostname, () => {
