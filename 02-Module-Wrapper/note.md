@@ -2,10 +2,10 @@
 
 Before a module's code is executed, Node.js will wrap it with a function wrapper that looks like the following:
 
-```bash
-  (function(exports, require, module, __filename, __dirname) {
-    // Module code actually lives in here
-  });
+```js
+(function (exports, require, module, __filename, __dirname) {
+  // Module code actually lives in here
+});
 ```
 
 ### By doing this, Node.js achieves a few things:
